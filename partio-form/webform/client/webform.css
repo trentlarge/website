@@ -1,0 +1,149 @@
+/* CSS declarations go here */
+html{
+  min-height: 100%;
+}
+body {
+  min-height: 100%;  
+  color: #ffffff;
+    
+  background: #ffffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(180deg, #ffab40 0%, #E05606 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffab40), color-stop(100%, #E05606));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(180deg, #ffab40 0%, #E05606 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(180deg, #ffab40 0%, #E05606 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(180deg, #ffab40 0%, #E05606 100%);
+  /* IE10+ */
+  background: linear-gradient(180deg, #ffab40 0%, #E05606 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffab40, endColorstr=#E05606, GradientType=1);
+}
+footer {
+    margin-top: 20px;
+}
+svg {
+    max-height: 100px;
+}
+img {
+    max-height: 200px;
+    border: 5px solid #BEBEBE;
+    border-radius: 5px;
+    opacity: .7;
+    cursor: pointer;
+}
+img:hover {
+    opacity: 1;
+    border: 5px solid #ffab40;
+}
+figure {
+    display: inline-block;
+}
+figcaption {
+    margin: 10px 0 0 0;
+    font-variant: small-caps;
+    font-family: Arial;
+    font-weight: bold;
+    color: #BEBEBE;
+}
+img:hover + figcaption {
+    color: #ffab40;
+}
+img.selected {
+    opacity: 1;
+    border: 5px solid #ffab40;
+}
+img.selected + figcaption {
+    color: #ffab40;
+}
+figure {
+     padding: 5px;
+}
+h1 {
+    text-align: center;
+}
+a {
+    cursor: pointer;
+}
+.divider:after {
+  background: #ffab40;
+}
+.divider:after {
+  content: "";
+  position: relative;
+  height: 4px;
+  width: 60px;
+  display: block;
+  text-align: center;
+  margin: 13px auto;
+  -webkit-border-radius: 5em;
+  -moz-border-radius: 5em;
+  -ms-border-radius: 5em;
+  -o-border-radius: 5em;
+  border-radius: 5em;
+}
+.center {
+    text-align: center;
+}
+.form-container {
+    background-color: white;
+    border-radius: 5px;
+    color: #263238;
+    padding: 20px;
+    font-size: 20px;
+    border: 5px solid rgba(224, 86, 6, .5);
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.5s;
+  -moz-animation-duration:0.5s;
+  animation-duration:0.5s;
+}
+.btn-default {
+    background-color: #ffab40;
+    border: 1px solid #E05606;
+    color: #ffffff;
+}
+.btn-default:hover {
+    background-color: #E05606;
+    border: 1px solid #E05606;
+    color: #ffffff;
+}
+.btn-default:focus, .btn-default:active:focus, .btn-default:active:hover  {
+    background-color: #ff8f00;
+    border: 1px solid #E05606;
+    color: #ffffff;
+}
+.btn-start {
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.btn-previous, .btn-next {
+    padding: 10px;
+    width: 120px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.form-group label {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
