@@ -15,3 +15,6 @@ fortawesome:fontawesome
 less
 twbs:bootstrap
 email
+iron:router
+accounts-base
+accounts-password

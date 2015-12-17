@@ -1227,7 +1227,7 @@ form .form-control:focus {
 
 /* back, initially hidden pane */
 .back {
-    padding: 5px;
+    padding: 15px;
 	transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
