@@ -12,7 +12,7 @@ Template.appLayout.onRendered(function() {
 							message: "Sorry this verification link has expired.",
 							callback: function(){
 
-								Router.go('http://partioapp.com');
+								Router.go('/home');
 
 							 }
 					})
@@ -27,7 +27,7 @@ Template.appLayout.onRendered(function() {
 				    message: "Your email address is successfully verified.",
 				    callback: function(){
 
-							Router.go('http://partioapp.com');
+							Router.go('/home');
 
 						 }
 				})
