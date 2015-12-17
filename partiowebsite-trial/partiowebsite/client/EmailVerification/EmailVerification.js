@@ -9,14 +9,15 @@ Template.emailverification.onRendered(function() {
 			if (err != null) {
 				if (err.message == 'Verify email link expired [403]') {
 					console.log('Sorry this verification link has expired.');
-							alert('nao validado');
+
+							bootbox.alert("Sorry this verification link has expired.");
 				}
 			} else {
 
 				//Creating transactionsId for new user;
 				Meteor.call('createTransactions');
+					bootbox.alert("Your email address is successfully verified");
 
-				alert('validado');
 			}
 		});
 	}
