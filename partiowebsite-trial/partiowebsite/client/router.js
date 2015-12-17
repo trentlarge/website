@@ -1,2 +1,5 @@
-Router.route('/', 'partiowebsite');
-Router.route('/verify-email/:token', {name: 'emailverification', controller: 'EmailVerificationController'});
+Router.route('/', function () {
+  this.render('appLayout');
+});
+
+Router.route('/verify-email/:token', {name: 'appLayout', controller: 'EmailVerificationController'});

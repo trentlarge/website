@@ -1,4 +1,4 @@
-Template.emailverification.onRendered(function() {
+Template.appLayout.onRendered(function() {
 	var token = (Iron.Location.get().path).split("/verify-email/")[1];
 	console.log(token);
 
