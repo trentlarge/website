@@ -1,0 +1,11 @@
+{
+
+  "env": {
+    "ROOT_URL": "http://localhost:3005/",
+    "MONGO_URL": "mongodb://localhost:3001/meteor"
+  },
+
+  "PrerenderIO": {
+    "token": "HpLV6SlkVHc8AQzeqnSi"
+  }
+}
