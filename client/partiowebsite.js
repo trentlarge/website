@@ -151,7 +151,9 @@ Template.body.created = function() {
   new WOW().init();
 }
 
-Template.body.rendered = function() {
+Template.body.rendered = function() {   
+
+
 	$('#all-main-content').imagesLoaded(function() {
 		Meteor.setTimeout(function() {
             

@@ -1,4 +1,3 @@
-
 Kadira.connect('HBDrxrGMwsaZo8juo', '854de5d4-1bf7-4eef-999d-b5f10f39952b');
 
 Meteor.methods({
