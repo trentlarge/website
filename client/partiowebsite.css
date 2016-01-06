@@ -554,6 +554,9 @@ section::after {
 .btn.btn-primary:hover {
   color: #ffffff;
 }
+.btn-primary.android.active {
+    background-color: #ffab40;
+}
 .btn.btn-default {
   border: none;
   background: #ffffff;
